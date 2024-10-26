@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/> -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg px-5  ">
+        <div class="container-fluid">
+          <img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-53f7b55b0dc3a8f18264d872fd53821b101c3bb6c5c1b282e609e41bae2641a3.svg.gz" alt="" id="navlogo">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse px-5" id="navbarSupportedContent" style="gap: 20px;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Curriculum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Teaching</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mentorship</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+              </li>
+              
+            </ul>
+            
+              
+              <button class="btn btn-outline-success" type="submit" style="color: blue; border: 1px blue solid;">Login</button>
+              <button class="btn btn-outline-success" type="submit" style="color: white; background-color: red;">Request a Call  </button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+        </div>
+    </nav>
+      <div id="a1">
+        <div id="a2">
+          <div id="h1">Your Path to a Successful Tech Career!</div>
+          <div id="h2">Now experience the program for <b>FREE</b></div>
+          <div id="h3">
+            <button id="book">BOOK A LIVE CLASS</button>
+            <button id="explore">EXPLORE ACADEMY</button>
+          </div>
+          <div id="h4">NEXT BATCH STARTS <b>MID-OCTOBER </b></div>
+        </div>
+        <div id="a3">
+          <div id="a4">Book a Live Class, For <b>Free!</b></div>
+          <div id="form">
+            <form action="">
+              <div id="a0">
+                <input type="text" placeholder="Name" /><br />
+                <input type="email" placeholder="Email" />
+              </div>
+              <div id="a6">
+                <div id="a7">
+                  <img src="data:image/png;base64,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" height="15px" width="20px" alt="" />
+                  <div id="a8">+91</div>
+                </div>
+                <input type="text" placeholder="Phone" />
+              </div>
+              <div id="b0">
+                <input type="number" placeholder="Graduation" />
+                <select id="college" name="college">
+                  <option value="college">college</option>
+                  <option value="SANK">SANK</option>
+                  <option value="ASIT">ASIT</option>
+                </select>
+              </div>
+              <div id="b7">
+                <select id="company" name="company">
+                  <option value="Company">Company</option>
+                  <option value="Infosys">Infosys</option>
+                  <option value="TCS">TCS</option>
+                </select>
+                <select id="jobtitle" name="jobtitle">
+                  <option value="Jobtitle">Jobtitle</option>
+                  <option value="Software Developer">Software Developer</option>
+                  <option value="Software Manger">Software Manger</option>
+                </select>
+              </div>
+              <div id="b1">
+                <div id="b2">
+                  <i class="fa-sharp fa-solid fa-square-check"></i>
+                </div>
+                <div id="b3">
+                  <div id="b4">WhatsApp/SMS Notifications</div>
+                  <div id="b5">
+                    Never miss out on reminders and updates from us!
+                  </div>
+                </div>
+              </div>
+              <div id="a9">
+                <button>Continue Booking Live Classes</button>
+                <div id="a10">
+                  <div id="i1">
+                    <i class="fa-sharp fa-solid fa-users-line"></i>
+                  </div>
+                  <div id="a11">Limited seats left</div>
+                </div>
+              </div>
+              <div id="a11">
+                <div id="a12">Already have an account? <b>Click here</b></div>
+                <div id="a13">
+                  By creating an account I have read and agree to Scaler’s
+                  <u>Terms</u> and <u>PrivacyPolicy</u>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+      
+      <div id="cards">
+        <div id="c1">
+          A program for engineers to master <b>Problem Solving & System Design</b>
+        </div>
+        <div id="c2">
+          <div class="card" style="width: 18rem; background-color: rgba(10, 93, 237, 0.775)">
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/structured-c36517d8d41efb3a24cbcb3fe1c8b27ffcfacb6b1462ec3e60516504a07eaff6.svg.gz"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">Structured, industry vetted curriculum</p>
+              <div id="line1"></div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; background-color: rgb(242, 10, 118)">
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/live-classes-afff2e39f63a26a19ee4ae844d4b0891c20c50e4b670a224564640cbb973f867.svg.gz"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Live classes by faculty who have been there, done that
+              </p>
+              <div id="line2"></div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; background-color: rgba(22, 225, 22, 0.771)">
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/project1-9fc6130d4e271198d5f051da0712b27627c872a353dac61c91f248e4f60b6ddf.svg.gz"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Practical experience through real-life projects
+              </p>
+              <div id="line3"></div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; background-color: rgba(28, 147, 221, 0.801)">
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/flexibility-94067174b36a4a38b3448219f64ccd3e42b3f32667c5ff0ec8d8fab665525d87.svg.gz"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Regular 1:1 mentorship from industry veterans
+              </p>
+              <div id="line4"></div>
+            </div>
+          </div>
+          <div
+            class="card"
+            style="width: 18rem; background-color: rgba(255, 166, 0, 0.941)"
+          >
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/career-support-c92399914995cba52680341de44c1ce49d292b1de0f10aeb58c3c58a79e3ad3b.svg.gz"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Career support via a dedicated recruitment team, alumni network,
+                etc.
+              </p>
+              <div id="line5"></div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; background-color: rgb(215, 19, 215)">
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/mentor-efc7b3e100e7f2bd17f1f95f4ca28b5205ac3f4e04d4cddd064a800cc63f1c74.svg.gz"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Aspirational peer group of 2,000+ Scaler students & alumni
+              </p>
+              <div id="line6"></div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div id="design">
+        <div id="heading">We have designed a <b>flexible program</b> for you</div>
+        <div id="row1">
+          <div id="card">
+            <img src="https://assets-v2.scaler.com/assets/academy/svg/missed-class-logo-60d09407cfb901d01f9acbf3ce40460ea42c291dc97dd6a8d9fe624594977239.svg.gz" alt="" id="logo">
+            <div id="heading">Missed a class?</div>
+            <div id="line">Watch the recording later, with teaching assistants available to solve your doubts</div>
+          </div>
+          <div id="card">
+            <img src="https://assets-v2.scaler.com/assets/academy/svg/family-logo-48c3a44b9f17f1e1a6ebcfa8e9ec7fa2370c27094caf996810c02754e307b3d1.svg.gz" alt="" id="logo">
+            <div id="heading">Work / family needs time?</div>
+            <div id="line">Pause your course and restart a month later with the next batch!</div>
+          </div>
+          <div id="card">
+            <img src="https://assets-v2.scaler.com/assets/academy/svg/office-d6141a2e19c03a99003316e141cdb625675a0498ba05e2df5d4ebb128bc21418.svg.gz" alt="" id="logo">
+            <div id="heading">Jobs & class timings clash?</div>
+            <div id="line">Decide your ideal class timing together with your classmates</div>
+          </div>
+        </div>
+        <div id="row2">
+          <div id="card">
+            <img src="https://assets-v2.scaler.com/assets/academy/svg/revise-8aceca46e65750c791c12d778669bf01650ef9e02c2d211ba30c6831c34946ab.svg.gz" alt="" id="logo">
+            <div id="heading">Want to revise?</div>
+            <div id="line">Access assignments/notes lifelong and recordings upto 6 months post course completion</div>
+          </div>
+          <div id="card">
+            <img src="https://assets-v2.scaler.com/assets/academy/svg/doubts-44d18551b6589cdeff9e88978faac43d7bb0787cdc74e508832d7692b4d4158b.svg.gz" alt="" id="logo">
+            <div id="heading">Have doubts?</div>
+            <div id="line">Get them resolved over text / video by our expert teaching assistants!</div>
+          </div>
+
+        </div>
+      </div>
+      <div id="part">
+        <div id="p0">
+          <b>Curriculum</b> is designed to make you a <b>solid engineer</b>
+        </div>
+        <div id="p1">
+          <div id="p2">
+            <div id="p3">
+              <div id="p4">Begginer</div>
+              <div id="p5">11.5 Months</div>
+            </div>
+            <div id="p6">
+              <input type="radio" placeholder="" />
+            </div>
+          </div>
+          <div id="p2">
+            <div id="p3">
+              <div id="p4">Intermediate</div>
+              <div id="p5">11.5 Months</div>
+            </div>
+            <div id="p6">
+              <input type="radio" placeholder="" />
+            </div>
+          </div>
+          <div id="p2">
+            <div id="p3">
+              <div id="p4">Advanced</div>
+              <div id="p5">9.5 Months</div>
+            </div>
+            <div id="p6">
+              <input type="radio" placeholder="" />
+            </div>
+          </div>
+        </div>
+        <div id="part2">
+          <div id="part3">
+            <div id="p7">
+              <div id="p8">
+                <div id="p9">MODULE-1</div>
+                <div id="p10">DSA: Data Structures and Algorithms</div>
+              </div>
+              <div id="p11">4 Months</div>
+            </div>
+            <div id="p7">
+              <div id="p8">
+                <div id="p9">MODULE-2</div>
+                <div id="p10">SQL</div>
+              </div>
+              <div id="p11">0.5 Month</div>
+            </div>
+            <div id="p7">
+              <div id="p8">
+                <div id="p9">MODULE-3</div>
+                <div id="p10">LLD</div>
+              </div>
+              <div id="p11">2.5 Months</div>
+            </div>
+            <div id="p7">
+              <div id="p8">
+                <div id="p9">MODULE-4</div>
+                <div id="p10">HLD</div>
+              </div>
+              <div id="p11">1.5 Months</div>
+            </div>
+            <div id="p7">
+              <div id="p8">
+                <div id="p9">MODULE-5</div>
+                <div id="p10">Capstone Project</div>
+              </div>
+              <div id="p11">1 Month</div>
+            </div>
+            <div id="p7">
+              <div id="p8">
+                <div id="p9">MODULE-6</div>
+                <div id="p10">Electives</div>
+              </div>
+              <div id="p11">1-2 Months</div>
+            </div>
+          </div>
+          <div id="part0">
+          <div id="part4">
+            <div id="part5">
+              <div id="m1">
+                <div id="m2">2 Months</div>
+                <div id="m3"><b>.</b> Programming Language Fundamentals</div>
+                <div id="m4">
+                  <ul>
+                    <li>Introduction to Java</li>
+                    <li>Input Output and Data Types</li>
+                    <li>Operators</li>
+                    <li>Conditions</li>
+                    <li>Loops</li>
+                    <li>Pattern Problems</li>
+                    <li>Functions</li>
+                    <li>1D and 2D Arrays</li>
+                    <li>Strings</li>
+                    <li>Memory Management</li>
+                    <li>Basic OOP for Problem Solving</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="m1">
+                <div id="m2">4.5 Months</div>
+                <div id="m3"><b>.</b> Data Structures and Algorithms</div>
+                <div id="m4">
+                  <ul>
+                    <li>Time and Space Complexity</li>
+                    <li>Array Problem Solving Techniques</li>
+                    <li>Bit Manipulation</li>
+                    <li>Maths for Problem Solving</li>
+                    <li>Recursion</li>
+                    <li>Backtracking</li>
+                    <li>Sorting</li>
+                    <li>Searching(Binary Search)</li>
+                    <li>Two Pointers</li>
+                    <li>Hashing</li>
+                    <li>Strings and Pattern Matching</li>
+                  </ul>
+                  <div id="m3"><b>.</b> Data Structures</div>
+                  <div id="m4">
+                    <ul>
+                      <li>Linked Lists</li>
+                      <li>Stacks</li>
+                      <li>Queues and Deques</li>
+                      <li>Trees and BST</li>
+                      <li>Tries</li>
+                      <li>Heaps</li>
+                    </ul>
+                  </div>
+                  <div id="m3">
+                    <b>.</b> Advanced Problem Solving Techniques
+                  </div>
+                  <div id="m4">
+                    <ul>
+                      <li>Greedy</li>
+                      <li>Dynamic Programming</li>
+                      <li>Graphs</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="m1">
+                <div id="m2">0.5 Months</div>
+                <div
+                  id="m3"
+                  style="align-items: start; text-align: start; width: 100%"
+                >
+                  <b>.</b>SQL
+                </div>
+                <div id="m4" style="width: 100%">
+                  <ul>
+                    <li>Relational Model</li>
+                    <li>CRUD</li>
+                    <li>Joins</li>
+                    <li>Aggregation</li>
+                    <li>Subqueries</li>
+                    <li>Views</li>
+                    <li>Transactions</li>
+                    <li>Indexing</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="m1">
+                <div id="m2">3.5 Months</div>
+                <div id="p" style="color: white">
+                  *Only 1 Specialisation is allowed per learner. Recorded
+                  lectures for the other can be availed via Student Dashboard.
+                  At Least 1 Specialisation is mandatory for successful
+                  completion of the course.
+                </div>
+                <div
+                  id="m3"
+                  style="
+                    text-align: start;
+                    color: orange;
+                    text-align: start;
+                    align-items: start;
+                  "
+                >
+                  Fullstack Engineering
+                </div>
+                <div id="m4">
+                  <ul>
+                    <li>HTML,CSS,Javascript</li>
+                    <li>Advanced HTML, CSS Case Studies</li>
+                    <li>
+                      Advanced JS Concepts (OOP and Concurrency) and Popular
+                      Interview Questions
+                    </li>
+                    <li>JS for Web Dev (DOM Manipulation, Event Handling)</li>
+                    <li>Design Patterns</li>
+                    <li>Git</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>
+                      How Internet Works (TCP, UDP, HTTP, Layering Architecture)
+                    </li>
+                    <li>API Design</li>
+                    <li>Deployment</li>
+                    <li>Frontend LLD and Machine Coding Case Studies</li>
+                    <li>Testing</li>
+                    <li>MongoDB</li>
+                    <li>NodeJS</li>
+                    <li>ExpressJS</li>
+                    <li>Backend Architecture</li>
+                    <li>Capstone Projects</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="m1">
+                <div id="m2">1 Month</div>
+                <div id="m3"></div>
+                <div id="m4">
+                  <ul>
+                    <li>Introduction to Scale and Scaling Techniques</li>
+                    <li>Introduction to Caching Techniques</li>
+                    <li>Introduction to SQL and NoSQL Databases</li>
+                    <li>Introduction to Event Driven Architecture</li>
+                    <li>Introduction to Microservice Architecture</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="m1">
+                <div id="m2">1-2 Months</div>
+                <div id="m3" style="color: orange">
+                  Advanced Software & System Design - 1.5 months
+                </div>
+                <div id="m4">
+                  <ul>
+                    <li>Consistent Hashing</li>
+                    <li>Caching</li>
+                    <li>CAP Theorem</li>
+                    <li>Distributed Systems & Databases</li>
+                    <li>SQL and NoSQL</li>
+                    <li>Scalability</li>
+                    <li>Zookeeper + Kafka</li>
+                    <li>Location Based Services (S3, Quad Trees)</li>
+                    <li>Microservices</li>
+                    <li>Case Studies</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button>Download Curriculum</button>
+        </div>
+        </div>
+      </div>
+      <div id="talk">
+        <div id="t0">
+          <div id="t1">
+            <div id="t2">Talk to our Advisor</div>
+            <div id="t3">AND GET</div>
+          </div>
+          <div id="t4">
+            <div id="t5">
+              <div id="i1">
+                <img
+                  src="https://assets-v2.scaler.com/assets/scaler/svg/checks-3d5addc4cacc0ff69ab83d45123a5b411e507af7a274c03a1b2fa35440248f58.svg.gz"
+                  alt=""
+                />
+              </div>
+              <div id="t6">Personalized <b>Career Roadmap</b></div>
+            </div>
+            <div id="t5">
+              <div id="i1">
+                <img
+                  src="https://assets-v2.scaler.com/assets/scaler/svg/checks-3d5addc4cacc0ff69ab83d45123a5b411e507af7a274c03a1b2fa35440248f58.svg.gz"
+                  alt=""
+                />
+              </div>
+              <div id="t6">Free <b>Career Counselling</b></div>
+            </div>
+            <div id="t5">
+              <div id="i1">
+                <img
+                  src="https://assets-v2.scaler.com/assets/scaler/svg/checks-3d5addc4cacc0ff69ab83d45123a5b411e507af7a274c03a1b2fa35440248f58.svg.gz"
+                  alt=""
+                />
+              </div>
+              <div id="t6">Free Access to <b>Scaler Events</b></div>
+            </div>
+          </div>
+          <button>Request a call</button>
+        </div>
+        <div id="talk2">
+          <img
+            class="hide-in-mobile"
+            data-src="https://assets-v2.scaler.com/assets/scaler/svg/girl-advisor-d-8c3dfdfb2c1754477186102f21bd4658da55661f94f3b2f66b22bcafe084bbc0.png.gz"
+            src="https://assets-v2.scaler.com/assets/scaler/svg/girl-advisor-d-8c3dfdfb2c1754477186102f21bd4658da55661f94f3b2f66b22bcafe084bbc0.png.gz"
+          />
+        </div>
+      </div>
+      <div id="reviews">
+        <div id="r0">Your learning is important. It's a good idea to go through
+         <b> reviews of previous students</b> to make an informed decision</div>
+          <div id="r1">1,000+ working professionals have joined the Scaler Academy family!</div>
+          <div id="jk">
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Mayur Kharche</div>
+                  <div id="m2">SDE3</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="50px" width="50px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Pawan-a37caeab1480a22282bcd915daf1868b945bf6314ee32f2834cff8bf4e1aab79.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Mayur Kharche</div>
+                  <div id="m2">SDE3</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="50px" width="50px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="./Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Mayur Kharche</div>
+                  <div id="m2">SDE3</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="50px" width="50px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="./Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Mayur Kharche</div>
+                  <div id="m2">SDE3</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="50px" width="50px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="./Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Mayur Kharche</div>
+                  <div id="m2">SDE3</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="50px" width="50px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="./Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Mayur Kharche</div>
+                  <div id="m2">SDE3</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="50px" width="50px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="./Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Mayur Kharche</div>
+                  <div id="m2">SDE3</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="50px" width="50px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="./Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Mayur Kharche</div>
+                  <div id="m2">SDE3</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="50px" width="50px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-success">
+                <div id="h1">
+                <div id="headers">
+                <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+                <div id="m0">
+                  <div id="m1">Soumya Darbari</div>
+                  <div id="m2">SDE2</div>
+                  <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+                </div>
+              </div>
+                <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+              </div>
+              </div>
+              <div class="card-body text-success">
+                <h5 class="card-title"></h5>
+                <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+              </div>
+              <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+            </div>
+          </div>
+      </div>
+      <div id="teaching">
+        <div id="t0">Our <b> teaching army</b> will make you<b>confident about your fundamentals</b></div>
+        <div id="p">Our tutors have built scalable systems and realise the real-life importance of DSA and System Design, not just in interviews but throughout your career</div>
+        <div id="t1">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active  ">
+                <div id="mr">
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/anshuman-85e4f5324d3c0bb62627a137362e7f7bdbc01564f70872f2a11124d780ff6f2f.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Anshuman Singh</h5>
+                    <p class="card-text">EX <img src="data:image/png;base64,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" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/mohit-215feea4e7e876cd6eb67c183c05a0c80c1131aa160c7272fad6ff34565f81cb.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Mohith Yadav</h5>
+                    <p class="card-text">EX <img src="data:image/png;base64,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" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/kshitij-1610f9adccde2749361d883081e123b52c81084930ab29645a0b9052bb91f687.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Kshitij Mishra</h5>
+                    <p class="card-text">EX <img src="data:image/png;base64,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" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/tarun-bb05b0be024562a1dffb59614d2fba22ea736a5b5551d5d3b2c84dc51570d003.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Tarun Malhotra</h5>
+                    <p class="card-text">EX <img src="data:image/png;base64,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" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+
+
+                
+                
+              </div>
+              </div>
+              <div class="carousel-item" id="bol">
+                <div id="mr">
+                  <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/anshuman-85e4f5324d3c0bb62627a137362e7f7bdbc01564f70872f2a11124d780ff6f2f.png.gz" height="100%;" width="100%"></div>
+                    <div class="card-body text-success">
+                      <h5 class="card-title">Anshuman Singh</h5>
+                      <p class="card-text">EX <img src="data:image/png;base64,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" height="30px" width="100px" alt=""></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                  </div>
+                  <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/mohit-215feea4e7e876cd6eb67c183c05a0c80c1131aa160c7272fad6ff34565f81cb.png.gz" height="100%;" width="100%"></div>
+                    <div class="card-body text-success">
+                      <h5 class="card-title">Mohith Yadav</h5>
+                      <p class="card-text">EX <img src="data:image/png;base64,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" height="30px" width="100px" alt=""></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                  </div>
+                  <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/kshitij-1610f9adccde2749361d883081e123b52c81084930ab29645a0b9052bb91f687.png.gz" height="100%;" width="100%"></div>
+                    <div class="card-body text-success">
+                      <h5 class="card-title">Kshitij Mishra</h5>
+                      <p class="card-text">EX <img src="data:image/png;base64,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" height="30px" width="100px" alt=""></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                  </div>
+                  <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/tarun-bb05b0be024562a1dffb59614d2fba22ea736a5b5551d5d3b2c84dc51570d003.png.gz" height="100%;" width="100%"></div>
+                    <div class="card-body text-success">
+                      <h5 class="card-title">Tarun Malhotra</h5>
+                      <p class="card-text">EX <img src="data:image/png;base64,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" height="30px" width="100px" alt=""></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="mr">
+                  <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/anshuman-85e4f5324d3c0bb62627a137362e7f7bdbc01564f70872f2a11124d780ff6f2f.png.gz" height="100%;" width="100%"></div>
+                    <div class="card-body text-success">
+                      <h5 class="card-title">Anshuman Singh</h5>
+                      <p class="card-text">EX <img src="data:image/png;base64,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" height="30px" width="100px" alt=""></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                  </div>
+                  <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/mohit-215feea4e7e876cd6eb67c183c05a0c80c1131aa160c7272fad6ff34565f81cb.png.gz" height="100%;" width="100%"></div>
+                    <div class="card-body text-success">
+                      <h5 class="card-title">Mohith Yadav</h5>
+                      <p class="card-text">EX <img src="data:image/png;base64,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" height="30px" width="100px" alt=""></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                  </div>
+                  <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/kshitij-1610f9adccde2749361d883081e123b52c81084930ab29645a0b9052bb91f687.png.gz" height="100%;" width="100%"></div>
+                    <div class="card-body text-success">
+                      <h5 class="card-title">Kshitij Mishra</h5>
+                      <p class="card-text">EX <img src="data:image/png;base64,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" height="30px" width="100px" alt=""></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                  </div>
+                  <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/tarun-bb05b0be024562a1dffb59614d2fba22ea736a5b5551d5d3b2c84dc51570d003.png.gz" height="100%;" width="100%"></div>
+                    <div class="card-body text-success">
+                      <h5 class="card-title">Tarun Malhotra</h5>
+                      <p class="card-text">EX <img src="data:image/png;base64,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  " height="30px" width="100px" alt=""></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="become">
+        <div id="part1"> 
+          <div id="image">
+          <img src="https://assets-v2.scaler.com/assets/scaler/png/Group%20242-ad5ecbe718f9788691d11aa1b9bfaa5d5c889fbcbeb806f4e73de269007c05f3.png.gz" alt="" id="photo">
+          </div>
+          <div id="text">
+            <div id="heading">Become a <b>Scaler Mentor</b></div>
+            <div id="line">A chance to give back to the community. Mentor Scaler students and help them unlock their true <br>potential.</br></div>
+
+          </div>
+        </div>
+        <div id="part2">
+          <button id="know">Know More</button>
+        </div>
+      </div>
+      <div id="next">
+        <div id="n1">In education and in life, an <b>aspirational peer group</b> always takes <b>learning to</b></div>
+        <div id="n2"><b>the next level.</b> Your peers inspire you to be better</div>
+        <div id="p">Via <b>ScalerChat</b>  you can interact with your peers across all classes and batches and even our alumni. Collaborate on projects, share job referrals & interview experiences, compete with the best, make new friends - the possibilities are endless and our community has something for everyone!</div>
+        <div id="n3">Here are some of the many useful channels on ScalerChat:</div>
+        <div id="n4">
+          <div id="n5">
+            <div id="n6">
+              <img src="https://assets-v2.scaler.com/assets/academy/svg/job-openings-selected-d46ebe4f4ea0c3722620fedfd3445327993625e622d9741248e6a014f1d612ec.svg.gz" alt="">
+              <div id="n7">Informatin On Job Openings</div>
+            </div>
+            <div id="n6">
+              <img src="https://assets-v2.scaler.com/assets/academy/svg/project-collaborations-selected-a5130a9df783aa8e4939d301086cbf4f7f78bcd54a8fee77980ee4569e3afeef.svg.gz" alt="">
+              <div id="n7">Project Collaboration</div>
+            </div>
+            <div id="n6">
+              <img src="https://assets-v2.scaler.com/assets/academy/svg/authentic-interview-experiences-b40069a6205981dc858042a3ef9fcb692979d95f27c805c13f628036113613d3.svg.gz" height="50px" width="50px" alt="">
+              <div id="n7">Authentic Interview Experiences</div>
+            </div>
+            <div id="n6">
+              <img src="https://assets-v2.scaler.com/assets/academy/svg/competitive-coding-0fce677bcac2335ad8580ddc4075e83deda9c6f406f72061dda65319fd0908a2.svg.gz" height="50px" width="50px" alt="">
+              <div id="n7">Competitive Coding</div>
+            </div>
+            <div id="n6">
+              <img src="https://assets-v2.scaler.com/assets/academy/svg/announcement-e68649358703255b51556b042a3a6cad74b460e84cefb371dd564bc3a9fce48b.svg.gz" height="50px" width="50px" alt="">
+              <div id="n7">Major Announcements</div>
+            </div>
+          </div>
+          <div id="n8">
+            <img src="https://assets-v2.scaler.com/assets/academy/png/chat-1-2d10a2d51deab39986dc5b3fa1546214fd5fadc502e81c190cdff0ab7e8a9eb5.png.gz" height="470px" width="700px" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="career">
+        <div id="service1">
+          <h1>Career services</h1>
+          <div id="line">Along with preparing you for the job, we also help you prepare for your search & your interviews</div>
+        </div> 
+        <div id="service2">
+             <div id="services">
+               <img src="https://assets-v2.scaler.com/assets/academy/svg/employer-d308ffc80a2a4dcd539cdfc4da50dec20698c52fff259ff2dae4eea5dfb15e94.svg.gz" alt="">
+                <div id="matter">Dedicated recruiter team & 100+ employer partners help bring you diverse options</div>
+              </div>
+              <div id="services">
+             <img src="https://assets-v2.scaler.com/assets/academy/svg/community-6fa9a0023c30456b10b76caa66f2de9daff9a4c74cc61bf19892cff4021c2a94.svg.gz" alt="">
+              <div id="matter">Exchange job opportunities with our extensive Scaler student community</div>
+             </div>
+             <div id="services">
+             <img src="https://assets-v2.scaler.com/assets/academy/svg/mock-3ef075c86047b3d501bbef3e91e533db4d3215e30107f5e6645ce11dc7a358eb.svg.gz" alt="">
+            <div id="matter">Practice mock interviews with people working in the industry</div>
+              </div>
+            <div id="services">
+            <img src="https://assets-v2.scaler.com/assets/academy/svg/resume-b9775f453cdc3079a7031ec687839bbdab8b6cadf2c8f68ba0dfaf8e63045e2e.svg.gz" alt="">
+            <div id="matter">Optimize your resume & LinkedIn profile with our experienced experts</div>
+             </div>
+        </div>          
+    </div>
+      <div id="confused">
+        <div id="lines">
+          <div id="line">Confused about which company to target next? <b>Try Our FREE Career</b></div> 
+          <div id="line"><b>Roadmap.</b></div>
+          </div>
+        <button id="get">GET FREE CARRER ROADMAP</button>
+    
+      
+
+      </div>
+      <div id="learning">
+        <div id="l0"><b>Start your learning journey</b> or make some Maggi? In 2 minutes, you can do both!</div>
+        <div id="l1">
+          <div class="card text mb-3" style="max-width: 18rem;">
+            <div class="card-header" style="color: white; font-weight: bold;">1.</div>
+            <div class="card-body" >
+              <h5 class="card-title" style="color: white; width: 120px;">Easy Registration</h5>
+              <p class="card-text" style="color: white;">In <2 minutes, make a new account or login using social media / Interviewbit</p>
+            </div>
+          </div>
+          <div class="card text mb-3" style="max-width: 18rem;background-image: url(https://assets-v2.scaler.com/assets/academy/svg/carousel-2-9564cde8d38ebab1459025fdef2ce4ab5234c0eb513f8adcb2f1372239658666.svg.gz); ">
+            <div class="card-header" style="color: white; font-weight: bold;">2.</div>
+            <div class="card-body" >
+              <h5 class="card-title" style="color: white; width: 120px;">Quick Evaluation</h5>
+              <p class="card-text" style="color: white;">Simple 30 minutes MCQ test, focused on aptitude and basic coding to find the right course for you</p>
+            </div>
+          </div>
+          <div class="card text mb-3" style="max-width: 18rem;background-image: url(https://assets-v2.scaler.com/assets/academy/svg/carousel-3-2e0b3720f1392a3e14891c535812590f2fbbd783345b01fafd9b31e490478a81.svg.gz);">
+            <div class="card-header" style="color: white; font-weight: bold;">3.</div>
+            <div class="card-body" >
+              <h5 class="card-title" style="color: white; width: 120px;">Enroll in your course</h5>
+              <p class="card-text" style="color: white;">Sign up with our various EMI options to swiftly kickstart your learning journey</p>
+            </div>
+          </div>
+          <div class="card text mb-3" style="max-width: 18rem; background-image: url(https://assets-v2.scaler.com/assets/academy/svg/carousel-4-00d16bc0a8527953681077555f504bd54ca8cc03896d1272ad62ffc77d116eb8.svg.gz);">
+            <div class="card-header" style="color: white; font-weight: bold;">4.</div>
+            <div class="card-body" >
+              <h5 class="card-title" style="color: white; width: 120px;">Upgrade your batch!</h5>
+              <p class="card-text" style="color: white;">Want a shorter course? Take the coding challenge after enrollment
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="question">
+        <div id="q1">Frequently Asked Questions</div>
+        <div id="q2">
+          <div id="q3">
+            <div id="q4">Program</div>
+            <div id="q4">Curriculam</div>
+            <div id="q4">Teaching</div>
+            <div id="q4">Teaching Assistants</div>
+            <div id="q4">Entrance Test</div>
+            <div id="q4">Mentors</div>
+            <div id="q4">Placment Support</div>
+            <div id="q4">Tution Fee</div>
+          </div>
+          <div id="q5">
+            <div id="q6">Curriculum</div>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
+                    What are the Beginner, Intermediate and Advanced sections?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div id="p">Each Scaler Academy batch (a new batch is launched every month) has three sections - Beginner, Intermediate and Advanced section. All the three sections start at the same time. Applicants are sorted into the three sections based on a written entrance test. The course content does change between the three sections and the course duration is different as well. The curriculum and duration is given below. For more information, please visit www.scaler.com/academy and download our curriculum brochure.
+                      1.Advanced section -
+The duration of this section is 31 weeks.
+Students in this section would be taught: Problem Solving and CS Fundamentals (15 weeks) and System Design with project (15 weeks). Students can choose a specialisation between fullstack and backend engineering during the System Design module in the last 15 weeks
+ 2.Intermediate section -
+The duration of this section is 39 weeks.
+In addition to all the content that the ‘Advanced section’ students would be taught, students of this section would be taught an additional module of Programming Constructs (8 weeks)
+3.Beginner section -
+The duration of this section is 47 weeks
+In addition to all the content that the ‘Advanced section’ students would be taught, students of this section would be taught an additional module of Introduction to Programming (8 weeks)
+Please note that the upcoming November batch would not accept applicants for the Beginner section. It would only accept applicants for the Intermediate and Advanced sections.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo">
+                    Do all sections start at the same time?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                   <div id="p">Yes, all sections start at the same time but end at different times, depending on the duration of the course for that section. The Advanced section ends in 31 weeks, the Intermediate section ends in 39 weeks and the Beginner section ends in 47 weeks.
+                    Please note that the upcoming November batch would not accept applicants for the Beginner section. It would only accept applicants for the Intermediate and Advanced sections.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree">
+                    Should I join the Beginner, Intermediate or Advanced section?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                   <div id="p">Your eligibility for the Beginner, Intermediate or Advanced section is decided basis an entrance test.
+                   </div>                 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree">
+                    What is the duration of this program?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div id="p">Depending on which section you are allotted, the duration of the course could range from 31 weeks to 47 weeks. This translates to 7 months to 11 months.</div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div id="explore">
+        <div id="e0">Explore <b>Free courses</b> from <b>Scaler Instructors</b></div>
+        <div id="e1"><u></u><b>1,10,000+</b></u> learners have attended these Courses.</div>
+        <div id="e2">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card" style="height: 15rem; width: 18rem;">
+                <img src="https://assets-v2.scaler.com/assets/scaler_branding/webp/tarun-a3f64ed42e367a0c66f9991af4a5f059b932a9ddd7d57920477be1b8e5861831.webp.gz" class="card-img-top" alt="...">
+                <div id="e3">THARUN LUTHRA</div>
+                <div class="card-body">
+                  <h5 class="card-title">Java for Beginners</h5>
+                  <div class="card-text">
+                    <div id="icon"><img src="https://assets-v2.scaler.com/assets/scaler_branding/svg/users_enrolled-6b4bbff5bf25c1f2b9297b70a6d55ee2d72c3449478b929d49dcd1e38b72a506.svg.gz"></div>
+                    <div id="Enroll">36502 enrolled</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card" style="height: 15rem; width: 18rem;">
+              <img src="https://assets-v2.scaler.com/assets/scaler_branding/webp/subhesh-8e8bf678ebafafcde11219524623c2cef2efbd1d2f2ea2adc48509697e97c969.webp.gz" class="card-img-top" alt="...">
+              <div id="e3">SUBESH KUMAR</div>
+              <div class="card-body">
+                <h5 class="card-title">DSA for Beginners using....</h5>
+                <div class="card-text">
+                  <div id="icon"><img src="https://assets-v2.scaler.com/assets/scaler_branding/svg/users_enrolled-6b4bbff5bf25c1f2b9297b70a6d55ee2d72c3449478b929d49dcd1e38b72a506.svg.gz"></div>
+                  <div id="Enroll">7287 enrolled</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card" style="height: 15rem; width: 18rem;">
+            <img src="https://assets-v2.scaler.com/assets/scaler_branding/webp/anshuman_widget-dc402e50e318011defb8529fcee11c103546ff0948eefd915b842a9ea9e93ae2.webp.gz" class="card-img-top" alt="...">
+            <div id="e3">ANSHUMAN SINGH</div>
+            <div class="card-body">
+              <h5 class="card-title">Instagram System Design</h5>
+              <div class="card-text">
+                <div id="icon"><img src="https://assets-v2.scaler.com/assets/scaler_branding/svg/users_enrolled-6b4bbff5bf25c1f2b9297b70a6d55ee2d72c3449478b929d49dcd1e38b72a506.svg.gz"></div>
+                <div id="Enroll">20421 enrolled</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card" style="height: 15rem; width: 18rem;">
+          <img src="https://assets-v2.scaler.com/assets/scaler_branding/webp/rahul-ed1485bad4e96a1a5cf267ebd8b7f450644521f221cbe4a8a9b67043b272c3ce.webp.gz" class="card-img-top" alt="...">
+          <div id="e3">RAHUL JANGHU</div>
+          <div class="card-body">
+            <h5 class="card-title">Python for Beginners</h5>
+            <div class="card-text">
+              <div id="icon"><img src="https://assets-v2.scaler.com/assets/scaler_branding/svg/users_enrolled-6b4bbff5bf25c1f2b9297b70a6d55ee2d72c3449478b929d49dcd1e38b72a506.svg.gz"></div>
+              <div id="Enroll">20953 enrolled</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+      </div>
+      <div id="e4">
+        <button>View All Free Courses</button>
+      </div>
+      </div>
+      <div id="footer">
+        <div id="part1">
+        <div id="one">
+          <div id="main">
+          <img src="https://assets-v2.scaler.com/assets/scaler/svg/scaler-logo-white-22af1fc1c42561ab06c87229e1e8abb555716fe2a1d817482067cb8f005e1799.svg.gz" alt="" id="photo">
+          <div id="line">Engineered by</div>
+          <img src="https://assets-v2.scaler.com/assets/scaler/png/made-by-interviewbit-footer-cf88e6220897577618a5dff23eef6f55d95d787a22c0f88b4ffa54d6c3dbf5d6.png.gz" alt="" id="photo2">
+          </div>
+          <div id="sub">
+          <div id="block">
+            <div id="first">
+              <div id="text">Download the App</div>
+              <img src="https://assets-v2.scaler.com/assets/scaler/svg/google-play-store-342b4c76febbbd5db4a5e0072d721a2c4ae132a0e9d359d0e39d252a5a4a48de.svg.gz" alt="" id="photo3">
+
+            </div>
+            <div id="second">
+              <img src="https://assets-v2.scaler.com/assets/scaler/svg/qr_code-6a66adcb8b6ae184ff4eb7dc2b1e26461494bfca27cb596f4946c8b6d0a6667f.svg.gz" alt="" id="qr">
+            </div>
+          </div>
+          </div>
+        </div>
+        <div id="two">
+          <div id="heading">Resources</div>
+          <div id="matter">
+            <div id="text">About us</div>
+            <div id="text">Become a Mentor</div>
+            <div id="text">Become a TA</div>
+            <div id="text">Become a Career Coach</div>
+            <div id="text">Scaler Blog</div>
+            <div id="text">Frequently Asked Questions</div>
+            <div id="text">Join Our Discord</div>
+            <div id="text">Terms of Use</div>
+            <div id="text">Privacy Policy</div>
+
+          </div>
+        </div>
+        <div id="three">
+          <div id="heading">Contact us</div>
+          <div id="matter">
+            <div id="text">Email: hello@scaler.com</div>
+          </div>
+        </div>
+        <div id="four">
+          <div id="heading">Follow us on</div>
+          <div id="matter">
+          <div id="line">
+            <i class="fa-brands fa-youtube"></i>
+            <div id="text">Youtube</div>
+          </div>
+          <div id="line">
+            <i class="fa-brands fa-linkedin"></i>
+            <div id="text">LinkedIn</div>
+          </div>
+          <div id="line">
+            <i class="fa-brands fa-square-facebook"></i>
+            <div id="text">Facebook</div>
+          </div>
+          <div id="line">
+            <i class="fa-brands fa-twitter"></i>
+            <div id="text">Twitter</div>
+            </div>
+          <div id="line">
+            <i class="fa-brands fa-instagram"></i>
+              <div id="text">Instagram</div>
+              </div>
+          <div id="line">
+            <i class="fa-brands fa-quora"></i>
+              <div id="text">Reviews on Quora</div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div id="part2">_________________________________________________________________________________________________________________________________________________________________________________________</div>
+      <div id="part3">
+        <div id="heading">Tutorials</div>
+        <div id="lines">Data Structures Tutorial | Python Tutorial | Java Tutorial | DBMS Tutorial | C Tutorial | JavaScript Tutorial | C++ Tutorial | SQL Tutorial | <br>Data Science Tutorial | Software Engineering Tutorial | HTML Tutorial | CSS Tutorial</br></div>
+      </div>
+      
+      
+      
+    </div>
+
+
+    
+      
+
+
+      
+
+
+          
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
+</html>
